@@ -1,0 +1,65 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #dadd06;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.btnlogin {
+  position: absolute;
+  width: 173px;
+  height: 45px;
+  right: 39px;
+  top: 20px;
+  background: #036733;
+  border-radius: 20px;
+  font-family: "Eras Demi ITC";
+  font-style: normal;
+  font-size: 18px;
+  /* line-height: 21px; */
+  text-transform: capitalize;
+  color: #ffffff !important;
+}
+
+button {
+  min-width: 156px;
+  font-family: "Eras Medium ITC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: black !important;
+}
+.active{
+background: rgba(255, 255, 255, 0.43);
+border-radius: 10px;
+}

@@ -1,0 +1,42 @@
+.imgFondo {
+  background-image: url("/assets/img/persona-comprando-mascarilla.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 50vh;
+  margin-top: 80px;
+}
+
+.logo {
+  position: absolute;
+  width: 550px;
+  height: 50vh;
+  left: 157px;
+  top: 80px;
+  background: rgba(214, 214, 214, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.logo img {
+  /* logosupermarkex 1 */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: block;
+  max-width: 504px; 
+  max-height: 40vh;
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+p {
+  text-align: center;
+  align-content: center;
+  margin: 5% auto;
+  font-family: "Eras Demi ITC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+
+  color: #000000;
+}

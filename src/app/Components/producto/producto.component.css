@@ -1,0 +1,46 @@
+mat-card {
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imgProdcuto {
+  border: solid red 1px;
+  min-width: 260px;
+  min-height: 160px;
+  margin-top: 18px;
+}
+
+.contenido {
+  margin-left: 26px;
+}
+
+.title {
+  font-family: "Eras Demi ITC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  color: #000000;
+  margin-bottom: -5px;
+}
+
+.subtitle {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #49454f;
+  margin-bottom: -5px;
+}
+
+.descripcion {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  color: #000000;
+}
