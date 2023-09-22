@@ -1,3 +1,12 @@
 <div class="main-content">
-<app-producto></app-producto>
+  <div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+  </div>
+  <div class="wrapper">
+    <app-producto
+      *ngFor="let producto of listaProductos"
+      [producto]="producto"
+    ></app-producto>
+
+  </div>
 </div>

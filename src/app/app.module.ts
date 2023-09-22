@@ -11,6 +11,9 @@ import { InicioComponent } from './Pages/inicio/inicio.component';
 import { ProductosComponent } from './Pages/productos/productos.component';
 import { ProductoComponent } from './Components/producto/producto.component';
 import {MatCardModule} from '@angular/material/card';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    NgbModule,
+    HttpClientModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

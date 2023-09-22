@@ -1,0 +1,211 @@
+[
+  {
+    "nombre": "HARINA MAIZ BLANCA PAN ",
+    "cantidad": "1000 gr",
+    "valor": 4700,
+    "descuento": 3600,
+    "descripcion": "Conserve en un lugar fresco y seco. Una vez abierto consuma en el menor tiempo posible. A 1/4 de taza de agua añada sal al gusto y añada lentamente 1 taza de ahrina pan, mezcle con una cuchara continuamente hasta obtener una masa consistente. No requiere amasarla. Deje reposar durante 2 minutos. Si quiere realzar el sabor añada al agua otros ingredientes como queso rayado margarina antes de agregar la harina. Harina de maíz blanco precocida. Harina de maíz blanco precocida. Puede contener trazas de trigo y/o avena. No contiene ni conservantes ni aditivos.",
+    "codigo": "200963",
+    "idCategoria": 1,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/185701-1600-1600?v=637813979850670000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Lenteja Diana x500g",
+    "cantidad": "500g",
+    "valor": 4590,
+    "descuento": 0,
+    "descripcion": "Los granos Diana son una excelente fuente de hierro y fibra para tu familia. ¿Ya los probaste? Los frijoles y lentejas Diana aportan el 20% o más del valor diario requerido de esos nutrientes, basados en una dieta de 2.000 calorías.",
+    "codigo": "3319689",
+    "idCategoria": 1,
+    "stock": 1000,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200370-1600-1600?v=637814146011970000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Chocolate Corona clavos y canela resellable 16und x500g",
+    "cantidad": "16und x500g",
+    "valor": 10580,
+    "descuento": 0,
+    "descripcion": "Disfruta el mejor sabor a clavos y canela compartiendo una deliciosa taza de chocolate con los que más quieres y sigue viviendo buenos momentos.",
+    "codigo": "0809763",
+    "idCategoria": 1,
+    "stock": 280,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/190511-1600-1600?v=637813998097130000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Azúcar Manuelita alta pureza",
+    "cantidad": "1kg",
+    "valor": 4900,
+    "descuento": 0,
+    "descripcion": "El azúcar tradicional de los colombianos, suministra la energía que requieres y hace más saludables los alimentos.",
+    "codigo": "0082359",
+    "idCategoria": 1,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/496039-1600-1600?v=638235793162930000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Café Sello Rojo",
+    "cantidad": "500g",
+    "valor": 17290,
+    "descuento": 13832,
+    "descripcion": "Disfruta del mejor Café sello rojo fuerte, un café para consentirte con más aroma y más sabor.",
+    "codigo": "0082944",
+    "idCategoria": 1,
+    "stock": 700,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/195510-1600-1600?v=637814059279500000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Pasta Clásica Spaghetti Doria",
+    "cantidad": "1000g",
+    "valor": 6300,
+    "descuento": 0,
+    "descripcion": "El Spaghetti es una pasta larga con múltiples y fáciles formas de preparación; perfecta para acompañar con salsas, carnes y verduras. Disfruta de un plato tradicional y nutritivo, elaborado con sémola de trigos importados y fortificado con Nutrivit para una buena alimentación. Mezcla de semolato de trigo fortificado y agua, adicionada con una mezcla de micronutrientes compuesta por vitamina A, acido folico, Hierro y zinc. Preparar en 1 litro de agua hirviendo por cada 100 g de pasta con sal al gusto, ag.egar la pasta y dejar cocinar de 12 a 15 min. Ideal para preparar como plato fuerte.",
+    "codigo": "0250213",
+    "idCategoria": 1,
+    "stock": 500,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186126-1600-1600?v=637813981180700000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Atún Aceite Oliva 3und ",
+    "cantidad": "80g Van Camps",
+    "valor": 15300,
+    "descuento": 0,
+    "descripcion": "Atun Aceite Oliva, delicioso y nutritivo perfecto para acompañar tus comidas y crear maravillosas recetas y deleitar tu paladar y el de los tuyos.",
+    "codigo": "0037502",
+    "idCategoria": 1,
+    "stock": 100,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/191508-1600-1600?v=637814013843670000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Avena Toning en hojuelas ",
+    "cantidad": "1000g",
+    "valor": 8990,
+    "descuento": 0,
+    "descripcion": "La Avena en Hojuelas TONING es uno de los cereales más completos. La fibra, vitaminas, minerales y otros nutrientes te aportan una excelente nutrición.",
+    "codigo": "0395679",
+    "idCategoria": 1,
+    "stock": 631,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/191169-1600-1600?v=637814011501730000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Aceite Premier girasol garrafa",
+    "cantidad": "3000ml",
+    "valor": 53490,
+    "descuento": 0,
+    "descripcion": "Disfruta de este delicioso producto y sorprende con las mejores recetas.Puede contener Trazas de Ingredientes Aceite de soya refinado, Oleína de palma refinada, Antioxidante terbutilhidroquinona - tbhq, Sinergista ácido cítrico, Vitamina a, Vitamina d, Soya",
+    "codigo": "0000219",
+    "idCategoria": 1,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192258-1600-1600?v=637814018752200000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Salsa tomate Bary ",
+    "cantidad": "1000g",
+    "valor": 14590,
+    "descuento": 11672,
+    "descripcion": "Conserve en un lugar fresco y seco. Una vez abierto consuma en el menor tiempo posible. A 1/4 de taza de agua añada sal al gusto y añada lentamente 1 taza de ahrina pan, mezcle con una cuchara continuamente hasta obtener una masa consistente. No requiere amasarla. Deje reposar durante 2 minutos. Si quiere realzar el sabor añada al agua otros ingredientes como queso rayado margarina antes de agregar la harina. Harina de maíz blanco precocida. Harina de maíz blanco precocida. Puede contener trazas de trigo y/o avena. No contiene ni conservantes ni aditivos.",
+    "codigo": "200963",
+    "idCategoria": 2,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/215964-1600-1600?v=637814286690970000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Mantequilla Colanta sin sal",
+    "cantidad": "250g",
+    "valor": 14300,
+    "descuento": 0,
+    "descripcion": "Una mantequilla suave y deliciosa para esparcir sobre tus comidas preferidas o para ser parte de preparaciones como tortas, galletas y más.",
+    "codigo": "0019181",
+    "idCategoria": 2,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/192968-1600-1600?v=637814023135000000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Queso parmesano Alpina bolsa",
+    "cantidad": "250g",
+    "valor": 27150,
+    "descuento": 22590,
+    "descripcion": "El queso parmesano Alpina es el acompañamiento perfecto para preparaciones como pastas, sopas y ensaladas. Disfruta de su inconfundible sabor.",
+    "codigo": "0008189",
+    "idCategoria": 2,
+    "stock": 130,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/505583-1600-1600?v=638272985305730000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Camaron precocido Cuisine&Co ",
+    "cantidad": "51/60 x400g",
+    "valor": 42700,
+    "descuento": 0,
+    "descripcion": "CCamarones (crustáceos), Agua, Humectante polifosfato de sodio, Antioxidante (metabisulfito de sodio), Glaseado, Crustáceos (camarones), Sulfitos.",
+    "codigo": "200963",
+    "idCategoria": 3,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200801-1600-1600?v=637814148481600000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Filete de trucha Pesquera del Mar con piel ",
+    "cantidad": "450g",
+    "valor": 38950,
+    "descuento": 0,
+    "descripcion": "Lleva a tu mesa lo mejor en pescados y mariscos, prepara deliciosas recetas con este producto y garantiza un sabor exquisito en tus preparaciones.",
+    "codigo": "0954942",
+    "idCategoria": 3,
+    "stock": 27,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/194877-1600-1600?v=637814056646330000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Filete de trucha fresca",
+    "cantidad": "1 Kg",
+    "valor": 42000,
+    "descuento": 0,
+    "descripcion": "Elabora deliciosas recetas incluyendo este producto de pescadería que ha sido seleccionado y clasificado para llevar a tu mesa siemrpe lo mejor. Filete de trucha fresca.",
+    "codigo": "3286179",
+    "idCategoria": 3,
+    "stock": 126,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/200288-1600-1600?v=637814145465330000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Banano Urabá",
+    "cantidad": "500 gr",
+    "valor": 1770,
+    "descuento": 0,
+    "descripcion": "Disfruta de una deliciosa fruto ideal para alimentar tu cuerpo con propiedades de gran beneficio.",
+    "codigo": "0011567",
+    "idCategoria": 4,
+    "stock": 700,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/205432-1600-1600?v=637814200017630000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Pimentones rojos y verdes",
+    "cantidad": "500 gr",
+    "valor": 3335,
+    "descuento": 0,
+    "descripcion": "Disfruta con tu familia y amigos todas las deliciosas recetas, que puedes preparar con los productos que encuentras en nuestra tienda.",
+    "codigo": "0002604",
+    "idCategoria": 4,
+    "stock": 89,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203154-1600-1600?v=637814193821830000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Cebolla Larga Malla",
+    "cantidad": "500 gr",
+    "valor": 4700,
+    "descuento": 0,
+    "descripcion": "Lleva a tu casa lo mejor en frutas y hortalizas, han sido seleccionadas y clasificadas con los estándares de calidad que te ofrecemos.",
+    "codigo": "0069979",
+    "idCategoria": 4,
+    "stock": 200,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203210-1600-1600?v=637814193954070000&width=1600&height=1600&aspect=true"
+  },
+  {
+    "nombre": "Malla Naranja Sweet",
+    "cantidad": "3000 gr",
+    "valor": 13190,
+    "descuento": 0,
+    "descripcion": "Crea deliciosas recetas con nuestro producto naranja sweet para compartir en familia.",
+    "codigo": "0294620",
+    "idCategoria": 4,
+    "stock": 650,
+    "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/203258-1600-1600?v=637814194066500000&width=1600&height=1600&aspect=true"
+  }
+]

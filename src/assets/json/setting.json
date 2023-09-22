@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nombre": "Despensa" },
+  { "id": 2, "nombre": "Lacteos" },
+  { "id": 3, "nombre": "Pescados y Mariscos" },
+  { "id": 4, "nombre": "Frutas y Verduras" }
+]

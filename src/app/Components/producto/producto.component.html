@@ -1,10 +1,26 @@
-<mat-card>
-  <div class="imgProdcuto">as</div>
-  <div class="contenido">
-    <p class="title">Corona</p>
-    <p class="subtitle">20 Pastillas corona</p>
-    <p class="subtitle">500Gr</p>
-    <p class="descripcion">500Gr</p>
-    <img src="assets\png\Tag Window.svg" /> asd
+<div class="card">
+  <div class="divImg">
+    <img class="imgProdcuto" src="{{ producto.imagen }}" />
   </div>
-</mat-card>
+  <div class="contentido">
+    <p class="title">{{ producto.nombre }}</p>
+    <p class="subtitle">{{ producto.cantidad }}</p>
+    <p class="descripcion">{{ producto.descripcion }}</p>
+    <div class="row" *ngIf="producto.descuento > 0">
+      <div class="col-2">
+        <img class="iconTag" src="assets\png\Tag Window.svg" />
+      </div>
+      <div class="col valorSinDescuento">$ {{ producto.valor | number }}</div>
+    </div>
+  </div>
+  <div *ngIf="producto?.descuento != 0" class="contenidoValor">
+    <span class="valor">$ {{ producto.descuento | number }}</span>
+  </div>
+  <div *ngIf="producto?.descuento == 0" class="contenidoValor">
+    <span class="valor">$ {{ producto.valor | number }}</span>
+  </div>
+  <button mat-button class="btnDescripcion" (click)="detalles()">
+    Descripción
+  </button>
+  <button mat-button class="btnAgregar" (click)="agregar()">Agregar</button>
+</div>
