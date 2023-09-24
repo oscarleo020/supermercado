@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ProductosService } from 'src/app/services/productos.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-navbar',
@@ -10,41 +10,56 @@ import { ProductosService } from 'src/app/services/productos.service';
 export class NavbarComponent implements OnInit {
   menuActivo = 'inicio';
   productoServ;
+  admin
   constructor(
     private router: Router,
-    public PoductosService: ProductosService
   ) {
-    // this.productoServ = this.PoductosService;
+    if (localStorage.getItem('admin')) {
+      this.admin = true;
+    }
   }
 
-  ngOnInit(): void {
-    this.menuActivo = localStorage.getItem('menu');
-    console.log(this.router.url);
-  }
+  ngOnInit(): void {}
 
   inicio() {
-    localStorage.setItem('menu', 'inicio');
+    this.menuActivo = 'inicio';
     this.router.navigate(['']);
-    console.log('navega');
-    console.log(this.router.url);
   }
 
   productos() {
-    localStorage.setItem('menu', 'productos');
+    this.menuActivo = 'productos';
     this.router.navigate(['/productos']);
-    console.log('navega');
-    console.log(this.router.url);
   }
 
   administracion() {
-    localStorage.setItem('menu', 'administracion');
-    this.router.navigate(['/administracion']);
-    console.log('navega');
-    console.log(this.router.url);
+    if (!localStorage.getItem('admin')) {
+      Swal.fire({
+        title: 'Solo usuarios administradores pueden ingresar.',
+        icon: 'warning',
+      });
+      return;
+    }
+    this.menuActivo = 'administracion';
+    this.router.navigate(['/listaproductos'], {
+      queryParams: { nav: 'administrador' },
+    });
   }
+
   carrito() {
-    this.router.navigate(['/carrito']);
-    console.log('carrito');
-    console.log(this.router.url);
+    let carrito = localStorage.getItem('carrito');
+    if (carrito) {
+      this.router.navigate(['/listaproductos'], {
+        queryParams: { nav: 'carrito' },
+      });
+      return
+    }
+    Swal.fire({
+      title:"Alerta",
+      icon:"info",
+      text:"No tiene productos en el carrito"
+    })
+  }
+  login() {
+    this.router.navigate(['/login']);
   }
 }

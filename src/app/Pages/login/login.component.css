@@ -1,0 +1,53 @@
+.cardLogin {
+  background: linear-gradient(180deg, #036733 0%, #dadd06 100%);
+  width: 350px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 130px;
+  border-radius: 10px;
+}
+.body {
+  background-image: url("../../../assets//img/abstract-blur-centro-comercial.png") ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.avatar {
+  width: 150px;
+  margin: 0 auto;
+}
+
+input {
+  width: 90%;
+  height: 56px;
+  background-color: white !important;
+  border-radius: 4px 4px 0px 0px;
+  border: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.input-icon-pass {
+  padding-left: 25px !important;
+  background: url("../../../assets/png/icon_lock.png") no-repeat right;
+  background-size: 20px;
+}
+.input-icon-user {
+  padding-left: 25px;
+  background: url("../../../assets/png/icon_user.png") no-repeat right center;
+  background-size: 20px;
+}
+button {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background: #036733;
+  width: 172px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 30px;
+}

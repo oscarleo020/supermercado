@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { modelProducto } from 'src/app/models/producto.model';
-import { ProductosService } from 'src/app/services/productos.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-producto',
@@ -10,16 +10,37 @@ import { ProductosService } from 'src/app/services/productos.service';
 })
 export class ProductoComponent implements OnInit {
   @Input() producto: modelProducto;
-  constructor(
-    private router: Router,
-    private ProductoService: ProductosService
-  ) {}
+  productos: [modelProducto];
+  constructor(private router: Router) {}
   ngOnInit(): void {}
 
   agregar() {
-    this.ProductoService.agregar(this.producto);
+    this.producto['compra'] = 1;
+    let carrito: [modelProducto] = JSON.parse(localStorage.getItem('carrito'));
+    if (carrito) {
+      carrito.forEach((element) => {
+        if (element.codigo == this.producto.codigo) {
+          element.compra++;
+        } else {
+          carrito.push(this.producto);
+        }
+      });
+    } else {
+      carrito = [this.producto];
+    }
+    this.productos = carrito;
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    Swal.fire({
+      title: 'Agregado!',
+      text: 'Nuevo producto agregado al carrito',
+      icon: 'info',
+      timer: 2000,
+      confirmButtonText: 'Continuar',
+    });
   }
   detalles() {
-    this.router.navigate(['/detalle']);
+    localStorage.setItem('producto', JSON.stringify(this.producto));
+    this.router.navigate(['/detalles']);
   }
 }

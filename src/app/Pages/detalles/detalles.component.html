@@ -1,0 +1,120 @@
+<div class="main-content">
+  <div class="row detalle">
+    <div class="col-4">
+      <p class="titulo">
+        {{ titulo }}
+      </p>
+      <img *ngIf="origen != 'nuevo'" src="{{ producto.imagen }}" alt="alt" />
+      <img *ngIf="origen == 'nuevo'" src="{{ imagen }}" alt="Nuevo" />
+      <input
+        class="urlImagen"
+        *ngIf="origen == 'nuevo'"
+        [disabled]="editar"
+        type="text"
+        placeholder="Url Imagen"
+        name="imagen"
+        [(ngModel)]="imagen"
+      />
+    </div>
+    <div class="col-7">
+      <div class="card fondo">
+        <form class="example-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                [disabled]="editar"
+                type="text"
+                placeholder="Codigo"
+                name="Codigo"
+                [(ngModel)]="codigo"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                [disabled]="editar"
+                type="text"
+                placeholder="Stock"
+                name="stock"
+                [(ngModel)]="stock"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                [disabled]="editar"
+                type="text"
+                placeholder="Nombre"
+                name="Nombre"
+                [(ngModel)]="nombre"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                [disabled]="editar"
+                type="text"
+                placeholder="Caracteristicas"
+                name="Cantidad"
+                [(ngModel)]="cantidad"
+              />
+            </div>
+            <div class="col-12">
+              <textarea
+                [disabled]="editar"
+                rows="5"
+                placeholder="Descripción"
+                name="Descripción"
+                [(ngModel)]="descripcion"
+              ></textarea>
+            </div>
+            <div class="col-6">
+              <select
+                name="categoria"
+                [disabled]="editar"
+                [(ngModel)]="producto.idCategoria"
+                (change)="prueba(producto.idCategoria)"
+              >
+                <option value="1">Despensa</option>
+                <option value="2">Lacteos</option>
+                <option value="3">Pescados y Mariscos</option>
+                <option value="4">Frutas y Verduras</option>
+              </select>
+            </div>
+
+            <div class="col-6">
+              <input
+                [disabled]="editar"
+                type="text"
+                placeholder="valor"
+                name="valor"
+                [(ngModel)]="valor"
+              />
+            </div>
+            <div class="col-6">
+              <mat-checkbox
+                [disabled]="editar"
+                class="example-margin"
+                name="checkDescuento"
+                [(ngModel)]="checkDescuento"
+                >Descuento</mat-checkbox
+              >
+            </div>
+            <div *ngIf="checkDescuento" class="col-6">
+              <input
+                [disabled]="editar"
+                type="text"
+                placeholder="Descuento"
+                name="descuento"
+                [(ngModel)]="descuento"
+              />
+            </div>
+            <button class="btnCancelar" (click)="cancelar()">
+              {{ titleCancelar }}
+            </button>
+            <button (click)="guardar()" *ngIf="!editar" class="btnContinuar">
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

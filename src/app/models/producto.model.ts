@@ -5,8 +5,8 @@ export class modelProducto {
   descripcion?: String;
   codigo?: String;
   idCategoria?: number;
-  cantidad?: string;
+  cantidad?: number;
   imagen?: string;
-  stock:number
+  stock: number;
+  compra: number;
 }
-

@@ -1,0 +1,92 @@
+<div class="main-content">
+  <a class="title">{{ title }}</a>
+  <div class="divNuevo">
+    <button class="btnNuevo" (click)="crearProducto()">Nuevo producto</button>
+  </div>
+  <div class="card">
+    <table>
+      <tr>
+        <th class="header">Codigo</th>
+        <th class="header">Imagen</th>
+        <th class="header">Producto</th>
+        <th class="header">Valor</th>
+        <th class="header">Cantidad</th>
+        <th
+          *ngIf="origen == 'administrador'"
+          class="header disabled-sorting text-right"
+        >
+          Acciones
+        </th>
+      </tr>
+      <tr *ngFor="let producto of listaProductos; index as i">
+        <th class="item">{{ producto.codigo }}</th>
+        <th class="item"><img src="{{ producto.imagen }}" alt="alt" /></th>
+        <th class="item">{{ producto.nombre }}</th>
+        <th class="item">
+          {{
+            (producto.descuento > 0 ? producto.descuento : producto.valor)
+              | currency
+          }}
+        </th>
+        <th class="item">
+          <div class="divcantidad">
+            <button
+              *ngIf="origen == 'carrito'"
+              class="delete"
+              (click)="remove(i)"
+            >
+              <mat-icon>remove</mat-icon>
+            </button>
+            <input
+              *ngIf="origen == 'carrito'"
+              type="text"
+              min="0"
+              disabled
+              [value]="producto.compra"
+            />
+            <input
+              *ngIf="origen == 'administrador'"
+              type="text"
+              min="0"
+              disabled
+              [value]="producto.stock"
+            />
+            <button
+              *ngIf="origen == 'carrito'"
+              class="more otro"
+              (click)="more(i)"
+            >
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+        </th>
+        <th *ngIf="origen == 'administrador'" class="item">
+          <div class="row">
+            <div class="divBoton" (click)="modificarProducto(producto)">
+              <mat-icon class="iconEditar">edit</mat-icon>
+            </div>
+            <div class="divBoton" (click)="eliminarProducto(producto)">
+              <mat-icon class="iconEditar">delete</mat-icon>
+            </div>
+          </div>
+        </th>
+      </tr>
+      <tr *ngIf="origen == 'carrito'">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>Total: {{ total | currency }}</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </table>
+    <button
+      *ngIf="origen == 'carrito'"
+      mat-raised-button
+      class="btnComprar float-right"
+      (click)="comprar()"
+    >
+      Comprar
+    </button>
+  </div>
+</div>

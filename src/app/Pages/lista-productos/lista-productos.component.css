@@ -1,0 +1,141 @@
+table {
+  margin: 0 15px 0 15px;
+}
+.title {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Eras Demi ITC";
+  font-style: normal;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 46px;
+  margin-top: 54px;
+}
+.more {
+  width: 24px;
+  width: 24px;
+}
+.header {
+  font-family: "Eras Demi ITC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  align-items: center;
+  color: #036733;
+}
+
+.item {
+  /* v-text/body-2 */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* or 143% */
+  align-items: center;
+
+  /* black/0.87 */
+  color: rgba(0, 0, 0, 0.87);
+}
+
+tr {
+  border-bottom: solid 1px #c5bfbf;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+img {
+  width: 130px;
+}
+.divcantidad {
+  margin: 0 auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+input {
+  margin: 0 auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 50px;
+  border: none;
+}
+
+.otro {
+  margin: 0 auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.more {
+  background-color: #036733;
+  border-radius: 0%;
+  color: white;
+  width: 30px;
+  height: 27px;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.delete {
+  margin: 0 auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: red;
+  border-radius: 0%;
+  color: white;
+  width: 30px;
+  height: 27px;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.btnComprar {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: #036733;
+  width: 172px;
+  height: 43px;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.btnNuevo {
+  float: right;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: #036733;
+  width: 172px;
+  height: 43px;
+  margin-left: auto;
+}
+
+.iconEditar {
+  margin-left: -7px;
+  margin-top: 5px;
+}
+.divBoton {
+  background-color: #bfe159;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+}
+
+.divNuevo {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+}
