@@ -147,4 +147,6 @@ export class DetallesComponent implements OnInit {
     // se navega a la lista de productos disponible
     this.router.navigate(['/productos']);
   }
+
+
 }

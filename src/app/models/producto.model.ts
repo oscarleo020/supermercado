@@ -1,3 +1,4 @@
+/** modelo de dados de Productos */
 export class modelProducto {
   nombre?: String;
   valor?: number;
