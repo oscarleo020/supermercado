@@ -22,6 +22,14 @@ export class ProductoComponent implements OnInit {
     if (carrito) {
       //si el carrito de compras tiene productos
       carrito.forEach((element) => {
+        // se valida si existe
+        if (element.codigo == this.producto.codigo) {
+          // si existe se aumenta la cantidad del producto en 1
+          element.compra++;
+        } else {
+          // si no existe se agrega el item a la lista de carrito de comrpas
+          carrito.push(this.producto);
+        }
       });
     } else {
       // si no existe se agrega el item a la lista de carrito de comrpas
