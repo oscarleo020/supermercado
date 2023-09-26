@@ -21,6 +21,7 @@
         <form class="example-form">
           <div class="row">
             <div class="col-6">
+              <label>Codigo</label>
               <input
                 [disabled]="editar"
                 type="text"
@@ -30,6 +31,7 @@
               />
             </div>
             <div class="col-6">
+              <label>Stock</label>
               <input
                 [disabled]="editar"
                 type="text"
@@ -39,6 +41,7 @@
               />
             </div>
             <div class="col-12">
+              <label>Nombre</label>
               <input
                 [disabled]="editar"
                 type="text"
@@ -48,6 +51,7 @@
               />
             </div>
             <div class="col-6">
+              <label>Caracteristicas</label>
               <input
                 [disabled]="editar"
                 type="text"
@@ -57,6 +61,8 @@
               />
             </div>
             <div class="col-12">
+              <label>Descripción</label>
+
               <textarea
                 [disabled]="editar"
                 rows="5"
@@ -66,6 +72,7 @@
               ></textarea>
             </div>
             <div class="col-6">
+              <label>Categoria</label>
               <select
                 name="categoria"
                 [disabled]="editar"
@@ -80,6 +87,8 @@
             </div>
 
             <div class="col-6">
+              <label>Valor</label>
+
               <input
                 [disabled]="editar"
                 type="text"
@@ -98,6 +107,8 @@
               >
             </div>
             <div *ngIf="checkDescuento" class="col-6">
+              <label>Valor con descuento</label>
+
               <input
                 [disabled]="editar"
                 type="text"
