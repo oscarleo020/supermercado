@@ -50,7 +50,7 @@ export class DetallesComponent implements OnInit {
 
       if (this.producto) {
         //si existe un producto se carga la informacion en las variables para mostrarlos en el HTML
-        this.titulo = 'Creación de Producto';
+        this.titulo = 'Detalle de Producto';
         this.nombre = this.producto.nombre;
         this.cantidad = this.producto.cantidad;
         this.codigo = this.producto.codigo;
@@ -66,6 +66,8 @@ export class DetallesComponent implements OnInit {
         }
       }
     } else if (this.origen == 'nuevo') {
+
+      this.titulo = 'Nuevo de Producto';
       /**
        * !si el origen es nuevo
        * no se precarga ninguna informacion en las variables a mostar en el html

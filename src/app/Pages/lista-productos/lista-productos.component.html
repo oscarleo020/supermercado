@@ -1,7 +1,7 @@
 <div class="main-content">
   <a class="title">{{ title }}</a>
-  <div class="divNuevo">
-    <button class="btnNuevo" (click)="crearProducto()">Nuevo producto</button>
+  <div class="divNuevo" *ngIf="origen == 'administrador'">
+    <button class="btnNuevo" (click)="crearProducto()" >Nuevo producto</button>
   </div>
   <div class="card">
     <table>
