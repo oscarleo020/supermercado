@@ -16,31 +16,36 @@ export class ProductoComponent implements OnInit {
 
   // funcion para agregar un nuevo producto al carrito de compras
   agregar() {
+    debugger;
     // se camptura la lista de productos agregados al carrito de compras
     let carrito: [modelProducto] = JSON.parse(localStorage.getItem('carrito'));
-    if (carrito) {
-      debugger;
-      //si el carrito de compras tiene productos
-      carrito.forEach((element) => {
-        // se valida si existe
-        if (element.codigo == this.producto.codigo) {
-          // si existe se aumenta la cantidad del producto en 1
-          element.compra++;
-        } else {
-          this.producto['compra'] = 1;
-          // si no existe se agrega el item a la lista de carrito de comrpas
-          carrito.push(this.producto);
-        }
-      });
+    if (
+      carrito && // se valida si existe un carrito creado
+      carrito.length > 0 // se valida si el carrito tiene mas de 0 productos agregados
+    ) {
+      // se valida que el producto seleccionado este en la lista del carrito)
+      if (carrito.find((producto) => producto.codigo == this.producto.codigo)) {
+        carrito.forEach((element) => {
+          // se valida si existe
+          if (element.codigo == this.producto.codigo) {
+            // si existe se aumenta la cantidad del producto en 1
+            element.compra++;
+          }
+        });
+      } else {
+        this.producto['compra'] = 1;
+        // si no existe se agrega el item a la lista de carrito de comrpas
+        carrito.push(this.producto);
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+      }
+      localStorage.setItem('carrito', JSON.stringify(carrito));
     } else {
       this.producto['compra'] = 1;
       // si no existe se agrega el item a la lista de carrito de comrpas
       carrito = [this.producto];
+      localStorage.setItem('carrito', JSON.stringify(carrito));
     }
 
-    this.productos = carrito;
-    // se guardan los cambios en el carrito de comrpas en el localStorage
-    localStorage.setItem('carrito', JSON.stringify(carrito));
     // se envia un modal informando que el producto se guardo en el carrito
     Swal.fire({
       title: 'Agregado!',
