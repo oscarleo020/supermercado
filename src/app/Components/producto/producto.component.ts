@@ -16,11 +16,10 @@ export class ProductoComponent implements OnInit {
 
   // funcion para agregar un nuevo producto al carrito de compras
   agregar() {
-   
     // se camptura la lista de productos agregados al carrito de compras
     let carrito: [modelProducto] = JSON.parse(localStorage.getItem('carrito'));
     if (carrito) {
-      debugger
+      debugger;
       //si el carrito de compras tiene productos
       carrito.forEach((element) => {
         // se valida si existe
@@ -28,6 +27,7 @@ export class ProductoComponent implements OnInit {
           // si existe se aumenta la cantidad del producto en 1
           element.compra++;
         } else {
+          this.producto['compra'] = 1;
           // si no existe se agrega el item a la lista de carrito de comrpas
           carrito.push(this.producto);
         }
